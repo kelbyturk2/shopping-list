@@ -4,6 +4,14 @@
     border: 1px solid black;
 }
 
+button {
+    background-color: teal;
+}
+
+body {
+    background-color: beige;
+}
+
 .navbar-image {
     vertical-align: middle;
 }
@@ -16,27 +24,26 @@
 
 .navbar-links-header {
     margin-top: 1em;
+    width: 100%;
     vertical-align: middle;
 }
 
 .navbar-link-bottom {
     display: inline-block;
-    margin-top: .75em;
-    margin-left: 10em;
-    margin-right: 5em;
+    margin: .75em 15%;
     font-size: 1.25em;
 }
 
 .navbar-link-top {
     display: inline-block;
-    margin-top: .75em;
+    margin: .75em 15%;
     font-size: 1.25em;
     margin-left: 12em;
 }
 
 .section-master {
     border: 1px solid black;
-    height: 100em;
+    height: 100;
     margin-top: 0;
 }
 
@@ -56,8 +63,9 @@
 .add-button {
     border: 1px solid black;
     border-radius: 5px;
-    margin-left: 5em;
-    margin-top: 3em;
+    margin: 3em 25%;
+    width: 50%;
+    background-color: teal;
 }
 
 .section-itemlist {
@@ -65,5 +73,46 @@
     position: static;
     margin: auto auto;
     height: 100%;
+    text-align: center;
+}
+
+.list-item {
+    text-align: left;
+    margin: auto auto;
+}
+
+.checkbox-remove-column {
+    border: 1px solid black;
+    height: 100%;
+    padding: 0;
+    margin: auto auto;
+    text-align: center;
+}
+
+.item-list-lines {
+    border: 1px solid black;
+    height: 100%;
+    padding: 0;
+    margin: auto auto;
+    text-align: center;
+}
+
+.checkbox-complete-column {
+    border: 1px solid black;
+    height: 100%;
+    padding: 0;
+    margin: auto auto;
+    text-align: center;
+}
+
+.remove-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3em 35%;
+    width: 30%;
+    background-color: teal;
+}
+
+.footer-text {
     text-align: center;
 }

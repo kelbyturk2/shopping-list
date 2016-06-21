@@ -10,13 +10,13 @@
        <section>
             <div class="container-fluid">
                 <div class="row navbar">
-                    <div class="col-sm-3 navbar-image">
+                    <div class="col-sm-2 navbar-image">
                         <a href="index.html"><img class="navbar-home-button" src="images/home.png"></a>
                     </div>
-                    <div class="col-sm-9 navbar-links-header">
-                        <ul>
-                            <li class="navbar-link-bottom"><a>Bottom Of Page</a></li>
-                            <li class="navbar-link-top"><a>Top Of Page</a></li>
+                    <div class="col-sm-10">
+                        <ul class="col-sm-12 navbar-links-header">
+                            <li class="navbar-link-bottom"><button>Bottom Of Page</button></li>
+                            <li class="navbar-link-top"><button>Top Of Page</button></li>
                         </ul>
                     </div>
                </div>
@@ -40,16 +40,47 @@
                                     <li><a href="#">Cake</a></li>
                                 </ul>
                         </div>
-                        <div class="col-sm-6 add-button">
-                            <a>Add</a>
+                        <div class="col-sm-12">
+                            <button class="add-button">Add</button>
                         </div>
                    </div>
                    <div class="row col-sm-9 section-itemlist">
-                       <h3><u>Item List</u></h3>
-
+                       <div class="list-item">
+                          <div class="checkbox-remove-column" style="float: left; width: 25%;">
+                             <h3><u>Remove/Can't Find</u></h3>
+                              <input class="checkbox-remove" type="checkbox"><br>
+                              <input class="checkbox-remove" type="checkbox"><br>
+                              <input class="checkbox-remove" type="checkbox"><br>
+                              <input class="checkbox-remove" type="checkbox"><br>
+                          </div>
+                          <div class="item-list-lines" style="float: left; width: 50%;">
+                             <h3><u>Items</u></h3>
+                              Milk <br>
+                              Bread <br>
+                              Cake <br>
+                              Cheese <br>
+                          </div>
+                          <div class="checkbox-complete-column" style="float: left; width: 25%;">
+                             <h3><u>Complete</u></h3>
+                              <input class="checkbox-complete" type="checkbox"><br>
+                              <input class="checkbox-complete" type="checkbox"><br>
+                              <input class="checkbox-complete" type="checkbox"><br>
+                              <input class="checkbox-complete" type="checkbox"><br>
+                          </div>
+                       </div>
+                       <div class="col-sm-12">
+                           <button class="remove-button">Remove</button>
+                       </div>
                    </div>
                </div>
             </div>
         </section>
     </body>
+    <footer>
+        <div class="row">
+           <div class="col-sm-12">
+               <p class="footer-text"><b>Created by Kelby Turk</b></p>
+           </div>
+        </div>
+    </footer>
 </html>
