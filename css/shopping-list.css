@@ -1,0 +1,69 @@
+.navbar {
+    height: 6em;
+    margin-bottom: 0;
+    border: 1px solid black;
+}
+
+.navbar-image {
+    vertical-align: middle;
+}
+
+.navbar-home-button {
+    height: 3.5em;
+    width: 3.5em;
+    margin: 1em .5em 0 2.5em;
+}
+
+.navbar-links-header {
+    margin-top: 1em;
+    vertical-align: middle;
+}
+
+.navbar-link-bottom {
+    display: inline-block;
+    margin-top: .75em;
+    margin-left: 10em;
+    margin-right: 5em;
+    font-size: 1.25em;
+}
+
+.navbar-link-top {
+    display: inline-block;
+    margin-top: .75em;
+    font-size: 1.25em;
+    margin-left: 12em;
+}
+
+.section-master {
+    border: 1px solid black;
+    height: 100em;
+    margin-top: 0;
+}
+
+.section-categories {
+    border: 1px solid black;
+    margin: auto auto;
+    position: static;
+    height: 100%;
+    text-align: center;
+}
+
+.list-categories {
+    text-align: left;
+    margin-top: 2em;
+}
+
+.add-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 5em;
+    margin-top: 3em;
+}
+
+.section-itemlist {
+    border: 1px solid black;
+    position: static;
+    margin: auto auto;
+    height: 100%;
+    text-align: center;
+}
