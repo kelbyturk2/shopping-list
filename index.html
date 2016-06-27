@@ -7,20 +7,17 @@
     <link rel="stylesheet" href="./css/shopping-list.css">
 </head>
     <body>
-       <section>
+        <section>
             <div class="container-fluid">
                 <div class="row navbar">
-                    <div class="col-sm-2 navbar-image">
+                    <div class="col-sm-3 navbar-image">
                         <a href="index.html"><img class="navbar-home-button" src="images/home.png"></a>
                     </div>
-                    <div class="col-sm-10">
-                        <ul class="col-sm-12 navbar-links-header">
-                            <li class="navbar-link-bottom"><button>Bottom Of Page</button></li>
-                            <li class="navbar-link-top"><button>Top Of Page</button></li>
-                        </ul>
+                    <div class="col-sm-9 navbar-links-header">
+                            <a class="navbar-link-bottom"><button>Bottom Of Page</button></a>
                     </div>
                </div>
-           </div>
+            </div>
         </section>
         <section>
            <div class="container-fluid">
@@ -29,16 +26,17 @@
                        <h3><u>Categories</u></h3>
                         <div data-role="collapsible" class="list-categories">
                             <h4>Dairy</h4>
-                                <ul data-role="listview">
-                                  <li><a href="#">Milk</a></li>
-                                  <li><a href="#">Cheese</a></li>
-                                  <li><a href="#">Eggs</a></li>
-                                </ul>
+                                <div class="categories-header" data-role="listview">
+                                    <input class="checkbox-categories" type="checkbox" style="float: left; width: 25%;"><a href="#">Milk</a><br>
+                                    <input class="checkbox-categories" type="checkbox" style="float: left; width: 25%;"><a href="#">Cheese</a><br>
+                                    <input class="checkbox-categories" type="checkbox" style="float: left; width: 25%;"><a href="#">Eggs</a><br>
+                                </div>
                             <h4>Bakery</h4>
-                                <ul data-role="listview">
-                                    <li><a href="#">Bread</a></li>
-                                    <li><a href="#">Cake</a></li>
-                                </ul>
+                                <div class="categories-header" data-role="listview">
+                                   <input class="checkbox-categories" type="checkbox" style="float: left; width: 25%;"><a href="#">Bread</a><br>
+                                   <input class="checkbox-categories" type="checkbox" style="float: left; width: 25%;"><a href="#">Cake</a><br>
+                                   <input class="checkbox-categories" type="checkbox" style="float: left; width: 25%;"><a href="#">Dinner-Rolls</a><br>
+                                </div>
                         </div>
                         <div class="col-sm-12">
                             <button class="add-button">Add</button>
@@ -46,8 +44,12 @@
                    </div>
                    <div class="row col-sm-9 section-itemlist">
                        <div class="list-item">
+                          <div class="input-form">
+                                <input type="text" value="" maxlength="20" placeholder="Add an item" id="addItemValue">
+                                <button type="submit" id="addItem">+</button>
+                          </div>
                           <div class="checkbox-remove-column" style="float: left; width: 25%;">
-                             <h3><u>Remove/Can't Find</u></h3>
+                             <h3><u>Remove</u></h3>
                               <input class="checkbox-remove" type="checkbox"><br>
                               <input class="checkbox-remove" type="checkbox"><br>
                               <input class="checkbox-remove" type="checkbox"><br>
@@ -55,10 +57,13 @@
                           </div>
                           <div class="item-list-lines" style="float: left; width: 50%;">
                              <h3><u>Items</u></h3>
-                              Milk <br>
+                             <ul class="item-list-lines">
+
+                             </ul>
+    <!--                          Milk <br>
                               Bread <br>
                               Cake <br>
-                              Cheese <br>
+                              Cheese <br>-->
                           </div>
                           <div class="checkbox-complete-column" style="float: left; width: 25%;">
                              <h3><u>Complete</u></h3>
@@ -77,10 +82,19 @@
         </section>
     </body>
     <footer>
-        <div class="row">
-           <div class="col-sm-12">
-               <p class="footer-text"><b>Created by Kelby Turk</b></p>
-           </div>
-        </div>
+        <section>
+            <div class="container-fluid">
+                <div class="row footer-links-header">
+                    <div class="col-sm-3 footer-text">
+                        <p>Created By Kelby Turk</p>
+                    </div>
+                    <div class="col-sm-9 footer-links-header">
+                        <a class="footer-link-top"><button>Top Of Page</button></a>
+                    </div>
+               </div>
+            </div>
+        </section>
     </footer>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="shopping-list.js"></script>
 </html>

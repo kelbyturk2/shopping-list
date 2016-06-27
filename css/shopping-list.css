@@ -1,11 +1,13 @@
 .navbar {
     height: 6em;
     margin-bottom: 0;
+    text-align: center;
     border: 1px solid black;
 }
 
 button {
-    background-color: teal;
+    background-color: #15ccee;
+    width: 10em;
 }
 
 body {
@@ -19,26 +21,24 @@ body {
 .navbar-home-button {
     height: 3.5em;
     width: 3.5em;
-    margin: 1em .5em 0 2.5em;
+    margin: 1em 0 0 0;
 }
 
 .navbar-links-header {
-    margin-top: 1em;
-    width: 100%;
-    vertical-align: middle;
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
 }
 
 .navbar-link-bottom {
     display: inline-block;
-    margin: .75em 15%;
+    margin: 1.25em 0;
+    padding: 0;
     font-size: 1.25em;
 }
 
-.navbar-link-top {
-    display: inline-block;
-    margin: .75em 15%;
-    font-size: 1.25em;
-    margin-left: 12em;
+.navbar-link-bottom:hover {
+    color: white;
 }
 
 .section-master {
@@ -57,7 +57,15 @@ body {
 
 .list-categories {
     text-align: left;
-    margin-top: 2em;
+    margin: 2em 2em;
+}
+
+.checbkox-categories {
+    margin: 0 0;
+}
+
+.categories-header {
+    margin: 0 25%;
 }
 
 .add-button {
@@ -65,7 +73,10 @@ body {
     border-radius: 5px;
     margin: 3em 25%;
     width: 50%;
-    background-color: teal;
+}
+
+.add-button:hover {
+    color: white;
 }
 
 .section-itemlist {
@@ -79,6 +90,11 @@ body {
 .list-item {
     text-align: left;
     margin: auto auto;
+}
+
+.input-form {
+    text-align: center;
+    padding: 1em;
 }
 
 .checkbox-remove-column {
@@ -110,9 +126,37 @@ body {
     border-radius: 5px;
     margin: 3em 35%;
     width: 30%;
-    background-color: teal;
+}
+
+.remove-button:hover {
+    color: white;
+}
+
+footer {
+    height: 6em;
+    margin-bottom: 0;
+    border: 1px solid black;
+}
+
+.footer-links-header {
+    margin: 0 0;
+    padding: 0;
+    height: 6em;
+    text-align: center;
 }
 
 .footer-text {
     text-align: center;
+    margin: 2em 0;
+}
+
+.footer-link-top {
+    display: inline-block;
+    margin: 1.25em 0;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+.footer-link-top:hover {
+    color: white;
 }
