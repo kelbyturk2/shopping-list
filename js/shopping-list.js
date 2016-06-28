@@ -16,7 +16,7 @@ function addItem() {
     //if the input is valid ....
     else {
         //dynamicaly create one row inside the shopping list
-        var row = $('<li><span class="list">' + itemValue + '</span></li>');
+        var row = $('<li class="col-sm-12 list"><input class="col-sm-3" type="checkbox"><p class="col-sm-6">' + itemValue + '</p><input class="col-sm-3" type="checkbox"></li>');
 
         //add each row to the previous ones
         $('.item-list-lines').append(row);
@@ -27,5 +27,8 @@ function addItem() {
 }
 
 $(document).ready(function(){
-
+    $('#addItem').on('click', function()
+    {
+        addItem();
+    });
 });

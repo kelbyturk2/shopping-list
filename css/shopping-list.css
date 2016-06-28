@@ -69,7 +69,6 @@ body {
 }
 
 .add-button {
-    border: 1px solid black;
     border-radius: 5px;
     margin: 3em 25%;
     width: 50%;
@@ -80,7 +79,6 @@ body {
 }
 
 .section-itemlist {
-    border: 1px solid black;
     position: static;
     margin: auto auto;
     height: 100%;
@@ -88,8 +86,9 @@ body {
 }
 
 .list-item {
-    text-align: left;
-    margin: auto auto;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
 }
 
 .input-form {
@@ -97,32 +96,19 @@ body {
     padding: 1em;
 }
 
-.checkbox-remove-column {
-    border: 1px solid black;
-    height: 100%;
+.item-list-headers {
+    height: 2em;
     padding: 0;
-    margin: auto auto;
+    margin: 1em auto auto auto;
     text-align: center;
 }
 
 .item-list-lines {
-    border: 1px solid black;
-    height: 100%;
-    padding: 0;
-    margin: auto auto;
-    text-align: center;
-}
-
-.checkbox-complete-column {
-    border: 1px solid black;
-    height: 100%;
-    padding: 0;
-    margin: auto auto;
+    margin: 0 0;
     text-align: center;
 }
 
 .remove-button {
-    border: 1px solid black;
     border-radius: 5px;
     margin: 3em 35%;
     width: 30%;
@@ -135,7 +121,6 @@ body {
 footer {
     height: 6em;
     margin-bottom: 0;
-    border: 1px solid black;
 }
 
 .footer-links-header {
