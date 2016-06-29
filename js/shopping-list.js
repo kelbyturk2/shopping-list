@@ -26,9 +26,31 @@ function addItem() {
     }
 }
 
+function tickItem() {
+    $(this).parent().toggleClass('ticked');
+}
+
+function deleteItem() {
+    $(this).parent().remove();
+}
+
+function deleteAll() {
+    $('.shopping-list').empty();
+}
+
 $(document).ready(function(){
-    $('#addItem').on('click', function()
-    {
+    $('#addItem').on('click', function () {
         addItem();
     });
+
+    $('.delete-all').on('click', function () {
+        deleteAll();
+    });
+
 });
+
+/*on click on the ".delete" button activate function called deleteItem()*/
+$(document).on('click', '', deleteItem);
+
+/*on click on the ".checkbox" button activate function called tickItem()*/
+$(document).on('click', '.checkbox', tickItem);
