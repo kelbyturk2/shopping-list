@@ -10,18 +10,24 @@ button {
     width: 10em;
 }
 
-body {
-    background-color: beige;
+button:hover {
+    border: 2px solid black;
 }
 
-.navbar-image {
-    vertical-align: middle;
+body {
+    background-color: beige;
 }
 
 .navbar-home-button {
     height: 3.5em;
     width: 3.5em;
-    margin: 1em 0 0 0;
+    margin: 1em 12% 0 10%;
+    float: left;
+}
+
+.navbar-home-button:hover {
+    border: 2px solid black;
+    border-radius: 26px;
 }
 
 .navbar-links-header {
@@ -57,15 +63,17 @@ body {
 
 .list-categories {
     text-align: left;
-    margin: 2em 2em;
+    margin: 2em 1em;
 }
 
 .checbkox-categories {
     margin: 0 0;
+    padding: 0;
 }
 
 .categories-header {
-    margin: 0 25%;
+    margin: 0 0;
+    padding: 0;
 }
 
 .add-button {
@@ -74,12 +82,13 @@ body {
     width: 50%;
 }
 
-.ticked {
-    color: blue;
-}
-
 .add-button:hover {
     color: white;
+    border: 2px solid black;
+}
+
+.ticked {
+    color: blue;
 }
 
 .section-itemlist {
@@ -104,26 +113,31 @@ body {
     padding: 1em;
 }
 
+#addItem:hover {
+    color: white;
+}
+
 .item-list-headers {
     height: 2em;
     padding: 0;
-    margin: 1em auto auto auto;
+    margin: 1em auto 1em auto;
     text-align: center;
 }
 
 .item-list-lines {
-    margin: 0 0;
+    margin: 2em 0;
     text-align: center;
 }
 
 .remove-button {
     border-radius: 5px;
-    margin: 3em 35%;
+    margin: 1em 35%;
     width: 30%;
 }
 
 .remove-button:hover {
     color: white;
+    border: 2px solid black;
 }
 
 footer {
@@ -139,8 +153,8 @@ footer {
 }
 
 .footer-text {
-    text-align: center;
-    margin: 2em 0;
+    float: left;
+    margin: 2em 10% 0 5%;
 }
 
 .footer-link-top {
